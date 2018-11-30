@@ -1,0 +1,64 @@
+---
+title: All Games
+excerpt: "A List of Games"
+comments: false
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<head>
+    {% include head.html %}
+</head>
+<body>
+    {% include nav.html %}
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="wrapper animated fadeIn">
+            <div class="content">
+                <div class="post-title">
+                    <h1>All Games</h1>
+                    <a class="btn zoombtn" href="{{site.url}}">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </div>
+                <div class="post-list">
+                    <ul>
+                        <li class="wow fadeInLeft" data-wow-duration="1.5s">
+                            <a class="zoombtn" href="{{ site.url }}/spaceninjas">Space Ninjas</a>
+                            <p>Dodge all of the shurikens!</p>
+                            <a href="{{ site.url }}/spaceninjas" class="btn zoombtn">Play</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="wow fadeInLeft" data-wow-duration="1.5s">
+                            <a class="zoombtn" href="{{ site.url }}/battlepong">Battle Pong</a>
+                            <p>Play against your friend in an ultimate pong match</p>
+                            <a href="{{ site.url }}/battlepong" class="btn zoombtn">Play</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="wow fadeInLeft" data-wow-duration="1.5s">
+                            <a class="zoombtn" href="{{ site.url }}/gwackamole">Gwack A Mole</a>
+                            <p>How many avocados can you hit?</p>
+                            <a href="{{ site.url }}/gwackamole" class="btn zoombtn">Play</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="wow fadeInLeft" data-wow-duration="1.5s">
+                            <a class="zoombtn" href="{{ site.url }}/circa">Circa</a>
+                            <p>How long can you survive?</p>
+                            <a href="{{ site.url }}/circa" class="btn zoombtn">Play</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    {% include scripts.html %}
+    <script src="{{ site.url }}/assets/js/wow.min.js"></script>
+    <script type="text/javascript">(new WOW).init();</script>
+</body>
+</html>
