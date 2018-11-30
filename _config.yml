@@ -22,7 +22,7 @@ words_per_minute: 200
 logo: 'assets/img/icon.png'
 locale: en_US
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "starfy84.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://starfy84.github.io/
 
 # Build settings
 markdown: kramdown
@@ -76,3 +76,12 @@ github-url:         starfy84
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+gems:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+
+jekyll-mentions:
+    base_url: https://github.com
