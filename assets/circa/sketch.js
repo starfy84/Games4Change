@@ -105,7 +105,7 @@ setup=()=>{
 				return platform;
 			}
 			max_allowed_sunk=()=>
-				Math.min(platforms.length/3,(millis()/1000)**2/10);
+				Math.min(platforms.length/5,(millis()/1000)**2/10);
 			// sink some random platforms at start
 			//for(let i=0,l=platforms.length/10;i<l;++i) {
 			//	let platform= getPlatform(live);
