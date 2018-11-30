@@ -2,6 +2,7 @@ psin=(x)=>1+sin(x); // positive sine
 tau=2*Math.PI;
 range=n=>Array.from(Array(n).keys()); //https://stackoverflow.com/questions/8273047/javascript-function-similar-to-python-range
 mod=(a,b)=>((a%b)+b)%b;
+player_speed=1;
 initial_radius=100;
 ring_spacing=50;
 ring_space_usage=.8;
@@ -168,7 +169,7 @@ setup=()=>{
 			let mouse_player= mouse().add(player.mul(-1));
 			player= player.add(
 				mouse_player.mul(1/Math.max(1,mouse_player.d()))
-					.mul(delta/1000*Math.min(100,mouse_player.d()))
+					.mul(delta/1000*player_speed*Math.min(100,mouse_player.d()))
 			);
 			let grounded=false;
 			for(let j=rings.length-1;0<=j;--j) {
@@ -218,7 +219,7 @@ setup=()=>{
 			textAlign(CENTER);
 			fill(white_color);
 			textSize(50);
-			text(elapsed(),center.x,center.y-20);
+			text(Math.floor(elapsed()/100),center.x,center.y-20);
 			textSize(60);
 			text('CIRCA',center.x,center.y+40);
 			if(!grounded) {
@@ -233,7 +234,7 @@ setup=()=>{
 		textSize(40);
 		let screen=Size(innerWidth,innerHeight);
 		let center=screen.mul(1/2);
-		text('You scored only '+score+'.\nI\'m sure Andy could have done better.',center.x,center.y);
+		text('You scored only '+Math.floor(score/100)+'.\nI\'m sure Andy could have done better.\nClick to play again.',center.x,center.y);
 	};
 	setup_score=()=>{
 		playing=false;
