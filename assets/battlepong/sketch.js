@@ -9,7 +9,7 @@ var paddleH = 35;
 var healRate = 0.01;
 
 var slowLast = 250;
-var slowEffect = 0.3;
+var slowEffect = 0.5;
 
 var fade = 0, fadeStart = false;
 var bottomText = "PRESS SPACE TO SKIP", bottomFade = 255;
