@@ -22,7 +22,7 @@ words_per_minute: 200
 logo: 'assets/img/icon.png'
 locale: en_US
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://starfy84.github.io/"
+url: "https://Games4Change.github.io/"
 
 # Build settings
 markdown: kramdown
